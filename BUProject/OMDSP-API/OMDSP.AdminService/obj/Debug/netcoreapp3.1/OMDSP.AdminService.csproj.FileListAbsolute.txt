@@ -65,6 +65,9 @@ E:\BUProject\OMDSP-API\OMDSP.AdminService\bin\Debug\netcoreapp3.1\Microsoft.AspN
 E:\BUProject\OMDSP-API\OMDSP.AdminService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
 E:\BUProject\OMDSP-API\OMDSP.AdminService\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 E:\BUProject\OMDSP-API\OMDSP.AdminService\bin\Debug\netcoreapp3.1\Ocelot.dll
+E:\BUProject\OMDSP-API\OMDSP.AdminService\bin\Debug\netcoreapp3.1\log4net.dll
+E:\BUProject\OMDSP-API\OMDSP.AdminService\bin\Debug\netcoreapp3.1\log4net.config
+E:\BUProject\OMDSP-API\OMDSP.AdminService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
 E:\BUProject\OMDSP-API\OMDSP.AdminService\obj\Debug\netcoreapp3.1\OMDSP.AdminService.csproj.CoreCompileInputs.cache
 E:\BUProject\OMDSP-API\OMDSP.AdminService\obj\Debug\netcoreapp3.1\OMDSP.AdminService.MvcApplicationPartsAssemblyInfo.cs
 E:\BUProject\OMDSP-API\OMDSP.AdminService\obj\Debug\netcoreapp3.1\OMDSP.AdminService.MvcApplicationPartsAssemblyInfo.cache

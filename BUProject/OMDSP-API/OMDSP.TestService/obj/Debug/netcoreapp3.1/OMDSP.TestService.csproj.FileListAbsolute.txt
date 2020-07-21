@@ -152,3 +152,5 @@ E:\BUProject\OMDSP-API\OMDSP.TestService\obj\Debug\netcoreapp3.1\OMDSP.TestServi
 E:\BUProject\OMDSP-API\OMDSP.TestService\obj\Debug\netcoreapp3.1\OMDSP.TestService.pdb
 E:\BUProject\OMDSP-API\OMDSP.TestService\obj\Debug\netcoreapp3.1\OMDSP.TestService.genruntimeconfig.cache
 E:\BUProject\OMDSP-API\OMDSP.TestService\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\BUProject\OMDSP-API\OMDSP.TestService\bin\Debug\netcoreapp3.1\User.config
+E:\BUProject\OMDSP-API\OMDSP.TestService\bin\Debug\netcoreapp3.1\log4net.dll

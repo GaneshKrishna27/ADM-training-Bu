@@ -30,7 +30,7 @@ namespace OMDSP.AdminService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            
             services.AddTransient<IAdminRepository, AdminRepository>();
             services.AddDbContext<OMDSPDBContext>();
             services.AddCors(c =>
@@ -41,6 +41,8 @@ namespace OMDSP.AdminService
                 .AllowAnyHeader()
                 );
             });
+            services.AddControllers();
+
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             services.AddAuthentication(options =>
             {
@@ -59,11 +61,13 @@ namespace OMDSP.AdminService
                     ClockSkew = TimeSpan.Zero
                 };
             });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddLog4Net();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

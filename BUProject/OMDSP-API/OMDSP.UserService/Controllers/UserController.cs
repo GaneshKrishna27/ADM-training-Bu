@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using log4net;
+using log4net.Config;
 using Microsoft.AspNetCore.Mvc;
 using OMDSP.UserService.Models;
 using OMDSP.UserService.Repositories;
@@ -18,6 +22,8 @@ namespace OMDSP.UserService.Controllers
         {
             _repo = repo;
         }
+
+
         [HttpPost]
         [Route("addMedicine")]
         public IActionResult addMedicine(MedicineList obj)
@@ -45,5 +51,6 @@ namespace OMDSP.UserService.Controllers
                 return NotFound(e.Message);
             }
         }
+
     }
 }

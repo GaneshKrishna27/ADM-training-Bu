@@ -2,7 +2,6 @@ E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\appsettings.Development.jso
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\appsettings.json
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\OMDSP.exe
-E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.csprojAssemblyReference.cache
 E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.AssemblyInfoInputs.cache
 E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.AssemblyInfo.cs
 E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.RazorTargetAssemblyInfo.cache
@@ -58,6 +57,4 @@ E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagno
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Ocelot.dll
-E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.csproj.CoreCompileInputs.cache
-E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.MvcApplicationPartsAssemblyInfo.cs
-E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.MvcApplicationPartsAssemblyInfo.cache
+E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\log4net.dll

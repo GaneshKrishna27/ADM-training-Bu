@@ -48,7 +48,7 @@ namespace OMDSP.Gateway
             }
 
             app.UseRouting();
-
+            app.UseOcelot();
             app.UseAuthorization();
 
            
@@ -58,7 +58,7 @@ namespace OMDSP.Gateway
             {
                 endpoints.MapControllers();
             });
-            app.UseOcelot();
+           
         }
     }
 }
