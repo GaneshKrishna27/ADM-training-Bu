@@ -31,7 +31,7 @@ namespace OMDSP.UserService
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddControllers();
+            
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddDbContext<OMDSPDBContext>();
             services.AddCors(c =>
@@ -60,6 +60,7 @@ namespace OMDSP.UserService
                     ClockSkew = TimeSpan.Zero
                 };
             });
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -73,7 +74,8 @@ namespace OMDSP.UserService
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.UseCors("AllowOrigin");//Enable Cors

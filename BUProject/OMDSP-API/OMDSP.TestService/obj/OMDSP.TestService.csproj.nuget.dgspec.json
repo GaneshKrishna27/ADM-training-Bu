@@ -74,7 +74,7 @@
             },
             "Ocelot": {
               "target": "Package",
-              "version": "[16.0.1, )"
+              "version": "[14.0.11, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -165,7 +165,7 @@
             },
             "Ocelot": {
               "target": "Package",
-              "version": "[16.0.1, )"
+              "version": "[14.0.11, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -270,7 +270,7 @@
             },
             "Ocelot": {
               "target": "Package",
-              "version": "[16.0.1, )"
+              "version": "[14.0.11, )"
             },
             "log4net": {
               "target": "Package",
@@ -361,7 +361,7 @@
             },
             "Ocelot": {
               "target": "Package",
-              "version": "[16.0.1, )"
+              "version": "[14.0.11, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

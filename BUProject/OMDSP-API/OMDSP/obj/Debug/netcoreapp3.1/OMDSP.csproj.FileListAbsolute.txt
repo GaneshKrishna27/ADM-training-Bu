@@ -49,6 +49,9 @@ E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandar
 E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.dll
 E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.pdb
 E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.genruntimeconfig.cache
+E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\log4net.dll
+E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.csprojAssemblyReference.cache
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\FluentValidation.dll
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.MiddlewareAnalysis.dll
@@ -57,4 +60,6 @@ E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagno
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\Ocelot.dll
-E:\BUProject\OMDSP-API\OMDSP\bin\Debug\netcoreapp3.1\log4net.dll
+E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.csproj.CoreCompileInputs.cache
+E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.MvcApplicationPartsAssemblyInfo.cs
+E:\BUProject\OMDSP-API\OMDSP\obj\Debug\netcoreapp3.1\OMDSP.MvcApplicationPartsAssemblyInfo.cache

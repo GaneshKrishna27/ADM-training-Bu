@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:52448",
+      "applicationUrl": "http://localhost:52449",
       "sslPort": 0
     }
   },
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "OMDSP.AdminService": {
+    "OMDSP.AccountService": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

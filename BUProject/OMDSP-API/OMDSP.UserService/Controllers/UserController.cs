@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using log4net;
 using log4net.Config;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OMDSP.UserService.Models;
 using OMDSP.UserService.Repositories;
@@ -15,6 +16,7 @@ namespace OMDSP.UserService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUserRepository _repo;

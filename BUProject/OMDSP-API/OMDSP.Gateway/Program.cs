@@ -17,15 +17,15 @@ namespace OMDSP.Gateway
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.ConfigureAppConfiguration((host, config) =>
-                    {
-                        config.AddJsonFile("Ocelot.json");
+           Host.CreateDefaultBuilder(args)
+               .ConfigureWebHostDefaults(webBuilder =>
+               {
+                   webBuilder.ConfigureAppConfiguration((host, config) =>
+                   {
+                       config.AddJsonFile("Ocelot.json");
 
-                    });
-                    webBuilder.UseStartup<Startup>();
-                });
+                   });
+                   webBuilder.UseStartup<Startup>();
+               });
     }
 }

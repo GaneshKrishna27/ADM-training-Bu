@@ -37,6 +37,7 @@ namespace OMDSP.Gateway
             });
 
             services.AddControllers();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +49,9 @@ namespace OMDSP.Gateway
             }
 
             app.UseRouting();
-            app.UseOcelot();
+
+            //app.UseHttpsRedirection();
+
             app.UseAuthorization();
 
            
@@ -58,7 +61,8 @@ namespace OMDSP.Gateway
             {
                 endpoints.MapControllers();
             });
-           
+            app.UseOcelot();
+
         }
     }
 }

@@ -61,6 +61,9 @@ E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.As
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\log4net.dll
+E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\log4net.config
+E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\FluentValidation.dll
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.MiddlewareAnalysis.dll
@@ -68,9 +71,6 @@ E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.As
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Ocelot.dll
-E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\log4net.dll
-E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\log4net.config
-E:\BUProject\OMDSP-API\OMDSP.AccountService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
 E:\BUProject\OMDSP-API\OMDSP.AccountService\obj\Debug\netcoreapp3.1\OMDSP.AccountService.csproj.CoreCompileInputs.cache
 E:\BUProject\OMDSP-API\OMDSP.AccountService\obj\Debug\netcoreapp3.1\OMDSP.AccountService.MvcApplicationPartsAssemblyInfo.cs
 E:\BUProject\OMDSP-API\OMDSP.AccountService\obj\Debug\netcoreapp3.1\OMDSP.AccountService.MvcApplicationPartsAssemblyInfo.cache
