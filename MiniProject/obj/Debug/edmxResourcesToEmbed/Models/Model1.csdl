@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cours">
+    <Key>
+      <PropertyRef Name="courseId" />
+    </Key>
+    <Property Name="courseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stuId" Type="Int32" />
+    <Property Name="courseName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="courseDuration" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Student" Relationship="Self.FK__Courses__stuId__2C3393D0" FromRole="Courses" ToRole="Students" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="stdId" />
+    </Key>
+    <Property Name="stdId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stdName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="stdBranch" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="stdCity" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="stdPhn" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Courses" Relationship="Self.FK__Courses__stuId__2C3393D0" FromRole="Students" ToRole="Courses" />
+  </EntityType>
+  <Association Name="FK__Courses__stuId__2C3393D0">
+    <End Role="Students" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Courses" Type="Self.Cours" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Students">
+        <PropertyRef Name="stdId" />
+      </Principal>
+      <Dependent Role="Courses">
+        <PropertyRef Name="stuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StudentDBEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Courses" EntityType="Self.Cours" />
+    <EntitySet Name="Students" EntityType="Self.Student" />
+    <AssociationSet Name="FK__Courses__stuId__2C3393D0" Association="Self.FK__Courses__stuId__2C3393D0">
+      <End Role="Students" EntitySet="Students" />
+      <End Role="Courses" EntitySet="Courses" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CaseStudyonSms.Models.Cours>
+
+@{
+
+    ViewBag.Title = "Index";
+}
+
+<h2>Course Details</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm("Index", "Cours", FormMethod.Get))
+{
+
+    <b> Search Course: </b> @Html.TextBox("search")
+    <input type="submit" name="submit" value="Search" />
+}
+@if (Model.Count() == 0)
+{
+    <br>
+    <tr> <td colspan="3"> Records not found </td></tr>
+
+}
+else
+{
+<br>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.courseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.courseDuration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.stdName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.courseName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.courseDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student.stdName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.courseId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.courseId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.courseId })
+            </td>
+        </tr>
+    }
+
+</table>
+}

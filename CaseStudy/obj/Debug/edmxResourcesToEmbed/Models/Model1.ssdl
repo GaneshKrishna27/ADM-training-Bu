@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarservicingDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BookService">
+    <Key>
+      <PropertyRef Name="custId" />
+    </Key>
+    <Property Name="custId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="custName" Type="varchar" MaxLength="20" />
+    <Property Name="vehicleNo" Type="varchar" MaxLength="10" />
+    <Property Name="bookingDate" Type="datetime2" Precision="7" />
+    <Property Name="contactNumber" Type="varchar" MaxLength="10" />
+    <Property Name="bookStutus" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="firstName" Type="varchar" MaxLength="20" />
+    <Property Name="lastName" Type="varchar" MaxLength="20" />
+    <Property Name="contactNumber" Type="varchar" MaxLength="10" />
+    <Property Name="userEmail" Type="varchar" MaxLength="50" />
+    <Property Name="userPwd" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Vendors">
+    <Key>
+      <PropertyRef Name="vendorId" />
+    </Key>
+    <Property Name="vendorId" Type="int" Nullable="false" />
+    <Property Name="vendorName" Type="varchar" MaxLength="30" />
+    <Property Name="vendorAddress" Type="varchar(max)" />
+    <Property Name="contactNumber" Type="varchar" MaxLength="10" />
+    <Property Name="vendorEmail" Type="varchar" MaxLength="50" />
+    <Property Name="vendorPwd" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="CarservicingDBModelStoreContainer">
+    <EntitySet Name="BookService" EntityType="Self.BookService" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vendors" EntityType="Self.Vendors" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

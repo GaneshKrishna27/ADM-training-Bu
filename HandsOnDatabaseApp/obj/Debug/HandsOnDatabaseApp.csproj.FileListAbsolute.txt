@@ -1,0 +1,12 @@
+E:\HandsOnDatabaseApp\bin\Debug\HandsOnDatabaseApp.exe.config
+E:\HandsOnDatabaseApp\bin\Debug\HandsOnDatabaseApp.exe
+E:\HandsOnDatabaseApp\bin\Debug\HandsOnDatabaseApp.pdb
+E:\HandsOnDatabaseApp\bin\Debug\EntityFramework.dll
+E:\HandsOnDatabaseApp\bin\Debug\EntityFramework.SqlServer.dll
+E:\HandsOnDatabaseApp\bin\Debug\EntityFramework.xml
+E:\HandsOnDatabaseApp\bin\Debug\EntityFramework.SqlServer.xml
+E:\HandsOnDatabaseApp\obj\Debug\HandsOnDatabaseApp.csprojAssemblyReference.cache
+E:\HandsOnDatabaseApp\obj\Debug\HandsOnDatabaseApp.csproj.CoreCompileInputs.cache
+E:\HandsOnDatabaseApp\obj\Debug\HandsOnDatabaseApp.csproj.CopyComplete
+E:\HandsOnDatabaseApp\obj\Debug\HandsOnDatabaseApp.exe
+E:\HandsOnDatabaseApp\obj\Debug\HandsOnDatabaseApp.pdb

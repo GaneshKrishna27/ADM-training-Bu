@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+    <title>@ViewData["Title"] - Dashboard</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+
+<body>
+
+    <h1>Flowers</h1>
+    <div class="container text-center">
+        <div class="container">
+            <div class="card-desk">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/Images/1.jpg" style="width:100%" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sun flower</h5>
+                        <p class="card-text">Price:200</p>
+                        <a asp-action="#" asp-controller="User" class="btn btn-primary">Buy</a>
+                    </div>  
+                </div>
+                </br>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/Images/2.jpg" style="width:100%"alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Sunflower</h5>
+                        <p class="card-text">Price:300</p>
+                        <a asp-action="#" asp-controller="User" class="btn btn-primary">Buy</a>
+
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

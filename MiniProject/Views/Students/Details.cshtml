@@ -1,0 +1,50 @@
+﻿@model MiniProject.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.stdName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stdName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stdBranch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stdBranch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stdCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stdCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stdPhn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stdPhn)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.stdId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbfDBModelStoreContainer" CdmEntityContainer="dbfDBEntities">
+    <EntitySetMapping Name="stuinfoes">
+      <EntityTypeMapping TypeName="dbfDBModel.stuinfo">
+        <MappingFragment StoreEntitySet="stuinfo">
+          <ScalarProperty Name="stuId" ColumnName="stuId" />
+          <ScalarProperty Name="stuName" ColumnName="stuName" />
+          <ScalarProperty Name="phnNo" ColumnName="phnNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

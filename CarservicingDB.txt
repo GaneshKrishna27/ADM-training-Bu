@@ -1,0 +1,26 @@
+create table Users(userId varchar(20) primary key,firstName varchar(20),lastName varchar(20),contactNumber varchar(10),userEmail varchar(50) unique,userPwd varchar(10));
+
+create table Vendors(vendorId varchar(20) primary key,vendorName varchar(30),vendorAddress varchar(max),contactNumber varchar(10),vendorEmail varchar(50) unique,vendorPwd varchar(10));
+
+
+
+
+
+
+
+
+
+
+
+
+User user = new User();
+            var uId=db.Users.OrderByDescending(x => x.userId).FirstOrDefault();
+            if (uId == null)
+            {
+                user.userId = "U001";
+            }
+            else
+            {
+                //using string substring method to get the number of the last inserted employee's EmployeeID 
+                user.userId = "U" +(Convert.ToInt32(uId.userId.Substring(9, uId.userId.Length - 9)) + 1).ToString("D3");
+            }

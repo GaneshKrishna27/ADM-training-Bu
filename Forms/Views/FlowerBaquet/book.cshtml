@@ -1,0 +1,24 @@
+﻿@model Forms.Models.Flower
+@{
+    ViewBag.Title = "book";
+}
+
+
+@{
+    var selectedBoquetData = ViewBag.boquet;
+}
+<body>
+    @using (Html.BeginForm()) 
+    {
+        <div>
+            <img src="@selectedBoquetData.imagepath" />
+        </div>
+        <div>
+            <div itemprop="name">@selectedBoquetData.boquetName</div>
+            <span>
+                <span class="Price">₹.</span>
+                <span>@selectedBoquetData.price</span>
+            </span>
+        </div>
+    }
+</body>

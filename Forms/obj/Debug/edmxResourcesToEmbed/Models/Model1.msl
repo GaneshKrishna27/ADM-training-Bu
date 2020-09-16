@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FormModelStoreContainer" CdmEntityContainer="loginDBEntities2">
+    <EntitySetMapping Name="Flowers">
+      <EntityTypeMapping TypeName="FormModel.Flower">
+        <MappingFragment StoreEntitySet="Flower">
+          <ScalarProperty Name="flowerId" ColumnName="flowerId" />
+          <ScalarProperty Name="boquetName" ColumnName="boquetName" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="imagepath" ColumnName="imagepath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="signups">
+      <EntityTypeMapping TypeName="FormModel.signup">
+        <MappingFragment StoreEntitySet="signup">
+          <ScalarProperty Name="uId" ColumnName="uId" />
+          <ScalarProperty Name="uName" ColumnName="uName" />
+          <ScalarProperty Name="uPwd" ColumnName="uPwd" />
+          <ScalarProperty Name="uEmail" ColumnName="uEmail" />
+          <ScalarProperty Name="phnNo" ColumnName="phnNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

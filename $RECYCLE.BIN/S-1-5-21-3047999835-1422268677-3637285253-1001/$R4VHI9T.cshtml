@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MiniProject.Models.Student>
+
+@{
+    ViewBag.Title = "Sort";
+}
+
+<h2>Sort</h2>
+
+@using (Html.BeginForm("Sort", "Students", FormMethod.Get))
+{
+    
+    <b> Search Option: </b>@Html.RadioButton("option", "Name")  @Html.TextBox("search") <input type = "submit" name = "submit" value = "Search" / >
+ }
+    
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.stdName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stdBranch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stdCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stdPhn)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stdName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stdBranch)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stdCity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stdPhn)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.stdId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.stdId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.stdId })
+                </td>
+            </tr>
+        }
+
+    </table>

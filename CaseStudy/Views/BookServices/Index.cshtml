@@ -1,0 +1,57 @@
+﻿@model IEnumerable<CaseStudy.Models.BookService>
+
+@{
+    Layout = "~/Views/Shared/Vendor.cshtml";
+    ViewBag.Title = "Index";
+}
+
+<h2>Services</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.custName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vehicleNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bookingDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contactNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bookStutus)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.custName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vehicleNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bookingDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contactNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bookStutus)
+        </td>
+        <td>
+            @Html.ActionLink("Status", "Edit", new { id=item.custId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.custId }) |
+             @Html.ActionLink("Delete", "Delete", new { id=item.custId })    
+        </td>
+    </tr>
+}
+
+</table>
+

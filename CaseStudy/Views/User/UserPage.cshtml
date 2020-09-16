@@ -1,0 +1,13 @@
+﻿
+@{
+    Layout = "~/Views/Shared/Book.cshtml";
+    ViewBag.Title = "UserPage";
+}
+
+<h2>UserPage</h2>
+
+
+<input type="button" class="btn btn-info" value="DisplayVendorServices" onclick="location.href='@Url.Action("DisplayVendorServices", "User")'" />
+<input type="button" class="btn btn-info" value="BookingServices" onclick="location.href='@Url.Action("BookingDetails", "User")'" />
+<input type="button" class="btn btn-info" value="UpdateProfile" onclick="window.location.href = '/User/Edit?id=@TempData["id"]';" />
+

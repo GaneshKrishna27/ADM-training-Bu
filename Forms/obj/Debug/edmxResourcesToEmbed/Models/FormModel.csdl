@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="loginDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Flower">
+    <Key>
+      <PropertyRef Name="flowerId" />
+    </Key>
+    <Property Name="flowerId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="boquetName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="imagepath" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="signup">
+    <Key>
+      <PropertyRef Name="uId" />
+    </Key>
+    <Property Name="uId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="uName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="uPwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="uEmail" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="phnNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="loginDBEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Flowers" EntityType="Self.Flower" />
+    <EntitySet Name="signups" EntityType="Self.signup" />
+  </EntityContainer>
+</Schema>

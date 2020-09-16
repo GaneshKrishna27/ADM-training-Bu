@@ -1,0 +1,16 @@
+ [Key]
+        public int stdId { get; set; }
+        [Required(ErrorMessage = "Student Name is required")]
+        [Display(Name = "Student Name")]
+        public string stdName { get; set; }
+        [Required(ErrorMessage = "Branch is required")]
+        [Display(Name = "Branch")]
+        public string stdBranch { get; set; }
+        [Required(ErrorMessage = "City is required")]
+        [Display(Name = "City")]
+        public string stdCity { get; set; }
+        [Display(Name = "Mobile Number")]
+        [Required(ErrorMessage = "You must provide a phone number"), MaxLength(10)]
+        [DataType(DataType.PhoneNumber)]
+        [RegularExpression(@"^[7-9]{1}[0-9]{9}$", ErrorMessage = "Not a valid phone number")]
+        public string stdPhn { get; set; }

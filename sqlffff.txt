@@ -1,0 +1,1 @@
+select c.custnm, max(s.price*s.qty)totalprice from Customers c inner join Sales s on c.custId=s.custId where MONTH(s.dateofpurchase)=01 group by c.custnm having max(s.price*s.qty)>=(select max(s.price*s.qty) from Sales s)order by totalprice desc;

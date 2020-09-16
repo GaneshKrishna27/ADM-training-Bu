@@ -1,0 +1,47 @@
+﻿@model CarServicing.Models.Vendor
+
+@{
+    ViewBag.Title = "DisplayVendorServices";
+}
+
+@{
+    var dvs = ViewBag.DVS;
+
+}   
+<h2 style="text-align:center">Vendor Services</h2>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        
+        foreach (var services in dvs)
+        {
+            <ul>
+                <li>
+                    <strong>Vendor Name :</strong>@services.vendorName<br />
+                    <strong>Address :</strong>@services.vendorAddress<br />
+                    <strong>Contact :</strong>@services.contactNumber<br />
+                    <a href='@Url.Action("BookService", new { vendorId=services.vendorId})'>
+                        <div style="text-align: right; width: 100%;">
+                            <span><input type="button" value="Book" class="btn btn-default" /></span>
+                        </div>
+                        </a>
+                        
+
+
+                        <hr />
+                </li>
+            </ul>
+
+        }
+       
+
+    }
+</body>
+
+
+
+@*<div>
+    @Html.ActionLink("Back to List", "Home")
+</div>*@
+

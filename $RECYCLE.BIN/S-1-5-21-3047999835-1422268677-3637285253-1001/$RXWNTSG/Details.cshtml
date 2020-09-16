@@ -1,0 +1,58 @@
+﻿@model CaseStudy.Models.Vendor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vendor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.vendorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vendorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vendorAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vendorAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vendorEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vendorEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vendorPwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vendorPwd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.vendorId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,28 @@
+We have sales table, customer table and product table : 
+Sales table      – custid, prodid, qty,price,date_of_purchase 
+Product table - Prodid, prodnm,price, qty,date_of_order 
+Customer        – custid, custnm, custadd,custph from Mangayarkarasi Subramanian to everyone:    11:25 AM
+a.    Write a query to find which product has not at all been sold 
+b.    Write a query to find the most sold product and display it’s name 
+c.      Write a query to find the most sold product and display it’s name and total cost sold. 
+d.    How many products has been ordered in the  month of Jan 
+e.    Display the names of the products that has been sold the year 2000 
+f.      Display the name the customer who has made highest purchase in Jan month 
+g.     Display the name of the customers who haven’t purchased any product in Jan month 
+h.    Display the name of the customers who have purchased above Rs.4000
+
+b]select count(*) Totalcount,p.prdnm from  sales s inner join prdt p on s.prdid=p.prdid group by s.prdid,p.prdnm
+
+c]select top 1 SUM(p.price*p.qty)Totalprice, p.prodNm  from Sales s inner join Products p on s.prodId=p.prodId group by s.prodId,p.prodNm;
+
+d]select count(*)noofproducts from Sales where MONTH(dateofpurchase)=01;
+
+e]select p.prodnm from Products p inner join Sales s on s.prodId=p.prodId where YEAR(dataoforder)=2020;
+
+f]
+
+g]select c.custnm from Customers c inner join Sales s on c.custId=s.custId  where c.custId not in (select s.custId from  Sales s where MONTH(dateofpurchase)=01)
+
+h]select c.custnm from Customers c inner join Sales s on c.custId=s.custId where s.price>100; 
+      
+   

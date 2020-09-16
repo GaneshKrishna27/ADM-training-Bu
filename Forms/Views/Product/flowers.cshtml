@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "flowers";
+}
+
+<h2>flowers</h2>
+
+<style>
+    td {
+        padding-top: 2em;
+        padding-right: 2em;
+        padding-left: 2em;
+        padding-bottom: 2em;
+        border: hidden white;
+        border-width: medium;
+    }
+</style>
+<body>
+    @Html.AntiForgeryToken()
+    @using (Html.BeginForm())
+    {
+
+
+        <table class="center">
+
+            <tr>
+
+                @foreach (Forms.Models.Flower flower in Model)
+                {
+                    if (flower.flowerId =="4")
+                    {
+                        @Html.Raw("<tr>")
+                    }
+                    <td class="roses">
+
+                        <a href='@Url.Action("book", "FlowerBaquet", new { fid = flower.flowerId})'>
+                            <figure class="ImagePlaceholder">
+
+                                <img src="@flower.imagepath"  style="width:300px;height:250px;" />
+                            </figure>
+                            <div>
+                                <div itemprop="name">@flower.boquetName</div>
+                                <span>
+                                    <span class="Price">₹.</span>
+                                    <span>@flower.price</span>
+                                </span>
+                            </div>
+                        </a>
+
+                    </td>
+                    if (flower.flowerId == "6")
+                    {
+                        @Html.Raw("</tr>")
+                    }
+
+                }
+            </tr>
+        </table>
+    }
+</body>
